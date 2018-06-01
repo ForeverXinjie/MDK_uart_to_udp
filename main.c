@@ -31,6 +31,7 @@ void UART0_init(uint32_t buad);
 void PLL_out_set(uint8_t M,uint8_t N,uint8_t OD);
 void Input_init(void);
 void UartPuts_CAM(UART_TypeDef* UARTx, uint8_t *str); 
+void Cam_cmdput(void);
 
 /* Private variables ---------------------------------------------------------*/
 static __IO uint32_t TimingDelay;
@@ -40,26 +41,23 @@ uint32_t uart0_rx_cnt=0;
 uint8_t  CAM_Snap[9] 		= {0x81,0x01,0x04,0x24,0x0A,0x00,0x00,0x01,0xFF};
 uint8_t  CAM_RecordStar[9] 	= {0x81,0x01,0x04,0x24,0x0A,0x00,0x00,0x02,0xFF};
 uint8_t  CAM_RecordStop[9] 	= {0x81,0x01,0x04,0x24,0x0A,0x00,0x00,0x03,0xFF};
-uint8_t  uart_test[] = {"Hello World!"};
+uint8_t  uart_test[12] = {"Hello World!"};
 
 int main()
-{ 
-//	unsigned char c;  
-//    unsigned char err;
-	
+{
 	uint8_t  Sn_DIP[4]={192,168,1,189};
-	uint8_t  input2_flag=0;
 	System_Initialization(); 
 	Input_init();	
 	Network_Properties();
+	dma_data_struct_init();
+    dma_init();
+	
 	//Detect_Gateway
-	
-	
-	
 	if(Detect_Gateway()==1)
 	{
 		GPIO_ResetBits(GPIOC, D_OUTPUT1);	 
 	}
+	
 	while(1)
 	{  
 		loopback_udps(0, test_buf, 5000);        // Socket 0 is set to the UDP mode, set the port to 5000
@@ -71,28 +69,16 @@ int main()
 			uart0_rx_cnt = 0;
 			memset(USART_RX_BUF,0,2048);
 		}
-	
-		if((input1==0)||(input2==0))
+		
+		if((input1==0))
 		{
 			delay(100);
 			if(input1 == 0)
-				UartPuts_CAM(UART0,CAM_Snap);
+				dma_uart0((uint32_t)uart_test,(uint32_t)&UART0->DR,0,12);
 				while(input1==0);
-			if(input2 == 0)
-			{
-				input2_flag = !input2_flag;
-				while(input2 == 0);
-				if(input2_flag==1)
-				{
-					UartPuts_CAM(UART0,CAM_RecordStar);
-					
-				}
-				else
-				{
-					UartPuts_CAM(UART0,CAM_RecordStop);
-				}
-			}
 		}
+		
+//		Cam_cmdput();
 	}
 
 }
@@ -226,6 +212,33 @@ void UartPuts_CAM(UART_TypeDef* UARTx, uint8_t *str)
         UartPutc(UARTx, ch);
         *str++;
     }while(ch != 0xFF);
+	
+}
+
+void Cam_cmdput(void)
+{
+	static uint8_t  input2_flag=0;
+	if((input1==0)||(input2==0))
+	{
+		delay(100);
+		if(input1 == 0)
+			UartPuts_CAM(UART0,CAM_Snap);
+			while(input1==0);
+		if(input2 == 0)
+		{
+			input2_flag = !input2_flag;
+			while(input2 == 0);
+			if(input2_flag==1)
+			{
+				UartPuts_CAM(UART0,CAM_RecordStar);
+				
+			}
+			else
+			{
+				UartPuts_CAM(UART0,CAM_RecordStop);
+			}
+		}
+	}
 	
 }
 

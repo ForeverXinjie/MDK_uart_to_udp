@@ -50,14 +50,14 @@ void dma_data_struct_init(void)
 
   if ((ptr + blksize) > (RAM_ADDRESS_MAX + 1)) 
   {
-    printf("ERROR : Not enough RAM space for DMA data structure.");
+//    printf("ERROR : Not enough RAM space for DMA data structure.");
   }
 
   /* Set pointer to the reserved space */
   dma_data = (dma_data_structure *) ptr;
   ptr = (unsigned int) &dma_data->Primary->SrcEndPointer;
 
-  printf ("dma structure block address = %x\n", ptr);
+//  printf ("dma structure block address = %x\n", ptr);
 
   for (i=0; i<ch_num; i++) {
     dma_data->Primary[i].SrcEndPointer  = 0;
@@ -77,24 +77,24 @@ void dma_data_struct_init(void)
 void dma_init(void)
 {
     unsigned int current_state;
-    printf("Initialize DMA");
+//    printf("Initialize DMA");
     current_state = DMA->DMA_STATUS;
-    printf ("- # of channels allowed : %d\n",(((current_state) >> 16) & 0x7)+1);
+//    printf ("- # of channels allowed : %d\n",(((current_state) >> 16) & 0x7)+1);
 
     /* Wait until current DMA complete */
     current_state = (DMA->DMA_STATUS >> 4)  & 0xF;
     if (!((current_state==0) || (current_state==0x8) || (current_state==0x9))) 
     {
-        printf ("- wait for DMA IDLE/STALLED/DONE");
+//        printf ("- wait for DMA IDLE/STALLED/DONE");
         current_state = (DMA->DMA_STATUS >> 4)  & 0xF;
-        printf ("- Current status        : %x\n",(((current_state) >> 4)  & 0xF));
+//        printf ("- Current status        : %x\n",(((current_state) >> 4)  & 0xF));
 
     }
     while (!((current_state==0) || (current_state==0x8) || (current_state==0x9)))
     {
         /* Wait if not IDLE/STALLED/DONE */
         current_state = (DMA->DMA_STATUS >> 4)  & 0xF;
-        printf ("- Current status        : %x\n",(((current_state) >> 4)  & 0xF));
+//        printf ("- Current status        : %x\n",(((current_state) >> 4)  & 0xF));
     }
     DMA->DMA_CFG = 0; /* Disable DMA controller for initialization */
     DMA->CTRL_BASE_PTR = (unsigned int) &dma_data->Primary->SrcEndPointer;
@@ -154,10 +154,10 @@ void dma_uart0(uint32_t src,uint32_t dest, unsigned int size, unsigned int num)
 									(size << 24) |  /* src_size */
 									(0    << 21) |  /* dst_prot_ctrl - HPROT[3:1] */
 									(0    << 18) |  /* src_prot_ctrl - HPROT[3:1] */
-									(0    << 14) |  /* R_power */
+									(4    << 14) |  /* R_power */
 									((num-1)<<4) |  /* n_minus_1 */
 									(0    <<  3) |  /* next_useburst */
-									(2    <<  0) ;  /* cycle_ctrl - auto */
+									(6    <<  0) ;  /* cycle_ctrl - auto */
 	
 	dma_data->Primary[chnl_num].SrcEndPointer  = (EXPECTED_BE) ? __REV(src_end_pointer) : (src_end_pointer);
 	dma_data->Primary[chnl_num].DestEndPointer = (EXPECTED_BE) ? __REV(dst_end_pointer) : (dst_end_pointer);
