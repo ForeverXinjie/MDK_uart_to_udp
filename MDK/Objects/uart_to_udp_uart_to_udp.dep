@@ -1,0 +1,141 @@
+Dependencies for Project 'uart_to_udp', Target 'uart_to_udp': (DO NOT MODIFY !)
+F (..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM\startup_W7500x.s)(0x5B111E62)(--cpu Cortex-M0 --li -g --apcs=interwork -I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 518" --pd "ARMCM0 SETA 1"--list .\listings\startup_w7500x.lst --xref -o .\objects\startup_w7500x.o --depend .\objects\startup_w7500x.d)
+F (..\Libraries\W7500x_stdPeriph_Driver\src\W7500x_crg.c)(0x5B111E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I ..\..\MDK_uart_to_udp -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Include -I ..\Libraries\W7500x_stdPeriph_Driver\inc -I ..\Libraries\CMSIS\Include -I ..\ioLibrary\Application\loopback -I ..\ioLibrary\Ethernet -I ..\ioLibrary\MDIO-I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DARMCM0-o .\objects\w7500x_crg.o --omf_browse .\objects\w7500x_crg.crf --depend .\objects\w7500x_crg.d)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_crg.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cm0.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h)(0x5B111E62)
+F (..\Libraries\W7500x_stdPeriph_Driver\src\W7500x_dma.c)(0x5B111E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I ..\..\MDK_uart_to_udp -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Include -I ..\Libraries\W7500x_stdPeriph_Driver\inc -I ..\Libraries\CMSIS\Include -I ..\ioLibrary\Application\loopback -I ..\ioLibrary\Ethernet -I ..\ioLibrary\MDIO-I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DARMCM0-o .\objects\w7500x_dma.o --omf_browse .\objects\w7500x_dma.crf --depend .\objects\w7500x_dma.d)
+I (D:\Keil9.55\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_dma.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cm0.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h)(0x5B111E62)
+F (..\Libraries\W7500x_stdPeriph_Driver\src\W7500x_gpio.c)(0x5B111E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I ..\..\MDK_uart_to_udp -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Include -I ..\Libraries\W7500x_stdPeriph_Driver\inc -I ..\Libraries\CMSIS\Include -I ..\ioLibrary\Application\loopback -I ..\ioLibrary\Ethernet -I ..\ioLibrary\MDIO-I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DARMCM0-o .\objects\w7500x_gpio.o --omf_browse .\objects\w7500x_gpio.crf --depend .\objects\w7500x_gpio.d)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_gpio.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cm0.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h)(0x5B111E62)
+F (..\Libraries\W7500x_stdPeriph_Driver\src\W7500x_uart.c)(0x5B111E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I ..\..\MDK_uart_to_udp -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Include -I ..\Libraries\W7500x_stdPeriph_Driver\inc -I ..\Libraries\CMSIS\Include -I ..\ioLibrary\Application\loopback -I ..\ioLibrary\Ethernet -I ..\ioLibrary\MDIO-I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DARMCM0-o .\objects\w7500x_uart.o --omf_browse .\objects\w7500x_uart.crf --depend .\objects\w7500x_uart.d)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_uart.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cm0.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h)(0x5B111E62)
+F (..\Libraries\W7500x_stdPeriph_Driver\src\W7500x_wztoe.c)(0x5B111E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I ..\..\MDK_uart_to_udp -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Include -I ..\Libraries\W7500x_stdPeriph_Driver\inc -I ..\Libraries\CMSIS\Include -I ..\ioLibrary\Application\loopback -I ..\ioLibrary\Ethernet -I ..\ioLibrary\MDIO-I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DARMCM0-o .\objects\w7500x_wztoe.o --omf_browse .\objects\w7500x_wztoe.crf --depend .\objects\w7500x_wztoe.d)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_wztoe.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cm0.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+F (..\Libraries\CMSIS\Device\WIZnet\W7500\Source\system_W7500x.c)(0x5B111E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I ..\..\MDK_uart_to_udp -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Include -I ..\Libraries\W7500x_stdPeriph_Driver\inc -I ..\Libraries\CMSIS\Include -I ..\ioLibrary\Application\loopback -I ..\ioLibrary\Ethernet -I ..\ioLibrary\MDIO-I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DARMCM0-o .\objects\system_w7500x.o --omf_browse .\objects\system_w7500x.crf --depend .\objects\system_w7500x.d)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cm0.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x5B111E62)
+F (..\main.c)(0x5B111E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I ..\..\MDK_uart_to_udp -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Include -I ..\Libraries\W7500x_stdPeriph_Driver\inc -I ..\Libraries\CMSIS\Include -I ..\ioLibrary\Application\loopback -I ..\ioLibrary\Ethernet -I ..\ioLibrary\MDIO-I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DARMCM0-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (D:\Keil9.55\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_crg.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cm0.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h)(0x5B111E62)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_gpio.h)(0x5B111E62)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_uart.h)(0x5B111E62)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_dma.h)(0x5B111E62)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_wztoe.h)(0x5B111E62)
+I (..\ioLibrary\Application\loopback\loopback.h)(0x5B111E62)
+I (..\ioLibrary\Ethernet\socket.h)(0x5B111E62)
+I (..\ioLibrary\Ethernet\wizchip_conf.h)(0x5B111E62)
+I (..\ioLibrary\MDIO\W7500x_miim.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\string.h)(0x55DB2B78)
+F (..\W7500x_it.c)(0x5B111E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I ..\..\MDK_uart_to_udp -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Include -I ..\Libraries\W7500x_stdPeriph_Driver\inc -I ..\Libraries\CMSIS\Include -I ..\ioLibrary\Application\loopback -I ..\ioLibrary\Ethernet -I ..\ioLibrary\MDIO-I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DARMCM0-o .\objects\w7500x_it.o --omf_browse .\objects\w7500x_it.crf --depend .\objects\w7500x_it.d)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cm0.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h)(0x5B111E62)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_uart.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\string.h)(0x55DB2B78)
+I (..\ioLibrary\Application\loopback\loopback.h)(0x5B111E62)
+I (..\ioLibrary\Ethernet\socket.h)(0x5B111E62)
+I (..\ioLibrary\Ethernet\wizchip_conf.h)(0x5B111E62)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_wztoe.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+F (..\retarget.c)(0x5B111E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I ..\..\MDK_uart_to_udp -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Include -I ..\Libraries\W7500x_stdPeriph_Driver\inc -I ..\Libraries\CMSIS\Include -I ..\ioLibrary\Application\loopback -I ..\ioLibrary\Ethernet -I ..\ioLibrary\MDIO-I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DARMCM0-o .\objects\retarget.o --omf_browse .\objects\retarget.crf --depend .\objects\retarget.d)
+I (D:\Keil9.55\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_uart.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cm0.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\time.h)(0x55DB2B80)
+I (D:\Keil9.55\ARM\ARMCC\include\rt_misc.h)(0x55DB2B78)
+I (D:\Keil9.55\ARM\ARMCC\include\stddef.h)(0x55DB2B7E)
+F (..\ioLibrary\Ethernet\socket.c)(0x5B111E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I ..\..\MDK_uart_to_udp -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Include -I ..\Libraries\W7500x_stdPeriph_Driver\inc -I ..\Libraries\CMSIS\Include -I ..\ioLibrary\Application\loopback -I ..\ioLibrary\Ethernet -I ..\ioLibrary\MDIO-I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DARMCM0-o .\objects\socket.o --omf_browse .\objects\socket.crf --depend .\objects\socket.d)
+I (..\ioLibrary\Ethernet\socket.h)(0x5B111E62)
+I (..\ioLibrary\Ethernet\wizchip_conf.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cm0.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h)(0x5B111E62)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_wztoe.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+F (..\ioLibrary\Ethernet\wizchip_conf.c)(0x5B111E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I ..\..\MDK_uart_to_udp -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Include -I ..\Libraries\W7500x_stdPeriph_Driver\inc -I ..\Libraries\CMSIS\Include -I ..\ioLibrary\Application\loopback -I ..\ioLibrary\Ethernet -I ..\ioLibrary\MDIO-I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DARMCM0-o .\objects\wizchip_conf.o --omf_browse .\objects\wizchip_conf.crf --depend .\objects\wizchip_conf.d)
+I (D:\Keil9.55\ARM\ARMCC\include\stddef.h)(0x55DB2B7E)
+I (..\ioLibrary\Ethernet\wizchip_conf.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cm0.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h)(0x5B111E62)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_wztoe.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+F (..\ioLibrary\MDIO\W7500x_miim.c)(0x5B111E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I ..\..\MDK_uart_to_udp -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Include -I ..\Libraries\W7500x_stdPeriph_Driver\inc -I ..\Libraries\CMSIS\Include -I ..\ioLibrary\Application\loopback -I ..\ioLibrary\Ethernet -I ..\ioLibrary\MDIO-I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DARMCM0-o .\objects\w7500x_miim.o --omf_browse .\objects\w7500x_miim.crf --depend .\objects\w7500x_miim.d)
+I (D:\Keil9.55\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+I (..\ioLibrary\MDIO\W7500x_miim.h)(0x5B111E62)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_gpio.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cm0.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h)(0x5B111E62)
+F (..\ioLibrary\Application\loopback\loopback.c)(0x5B111E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I ..\..\MDK_uart_to_udp -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM -I ..\Libraries\CMSIS\Device\WIZnet\W7500\Include -I ..\Libraries\W7500x_stdPeriph_Driver\inc -I ..\Libraries\CMSIS\Include -I ..\ioLibrary\Application\loopback -I ..\ioLibrary\Ethernet -I ..\ioLibrary\MDIO-I G:\MDK_project\w7500p\MDK_uart_to_udp\MDK\RTE-I D:\Keil9.55\ARM\PACK\ARM\CMSIS\5.1.1\Device\ARM\ARMCM0\Include-I D:\Keil9.55\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DARMCM0-o .\objects\loopback.o --omf_browse .\objects\loopback.crf --depend .\objects\loopback.d)
+I (D:\Keil9.55\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+I (..\ioLibrary\Application\loopback\loopback.h)(0x5B111E62)
+I (D:\Keil9.55\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (..\ioLibrary\Ethernet\socket.h)(0x5B111E62)
+I (..\ioLibrary\Ethernet\wizchip_conf.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cm0.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x5B111E62)
+I (..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h)(0x5B111E62)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_wztoe.h)(0x5B111E62)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_gpio.h)(0x5B111E62)
+I (..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_uart.h)(0x5B111E62)

@@ -1,0 +1,15 @@
+.\objects\loopback.o: ..\ioLibrary\Application\loopback\loopback.c
+.\objects\loopback.o: D:\Keil9.55\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\loopback.o: ..\ioLibrary\Application\loopback\loopback.h
+.\objects\loopback.o: D:\Keil9.55\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\loopback.o: ..\ioLibrary\Ethernet\socket.h
+.\objects\loopback.o: ..\ioLibrary\Ethernet\wizchip_conf.h
+.\objects\loopback.o: ..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h
+.\objects\loopback.o: ..\Libraries\CMSIS\Include\core_cm0.h
+.\objects\loopback.o: ..\Libraries\CMSIS\Include\core_cmInstr.h
+.\objects\loopback.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
+.\objects\loopback.o: ..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h
+.\objects\loopback.o: ..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h
+.\objects\loopback.o: ..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_wztoe.h
+.\objects\loopback.o: ..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_gpio.h
+.\objects\loopback.o: ..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_uart.h

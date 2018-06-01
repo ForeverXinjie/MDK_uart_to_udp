@@ -1,0 +1,13 @@
+.\objects\retarget.o: ..\retarget.c
+.\objects\retarget.o: D:\Keil9.55\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\retarget.o: ..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_uart.h
+.\objects\retarget.o: ..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h
+.\objects\retarget.o: ..\Libraries\CMSIS\Include\core_cm0.h
+.\objects\retarget.o: D:\Keil9.55\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\retarget.o: ..\Libraries\CMSIS\Include\core_cmInstr.h
+.\objects\retarget.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
+.\objects\retarget.o: ..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h
+.\objects\retarget.o: ..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h
+.\objects\retarget.o: D:\Keil9.55\ARM\ARMCC\Bin\..\include\time.h
+.\objects\retarget.o: D:\Keil9.55\ARM\ARMCC\Bin\..\include\rt_misc.h
+.\objects\retarget.o: D:\Keil9.55\ARM\ARMCC\Bin\..\include\stddef.h

@@ -1,0 +1,19 @@
+--cpu Cortex-M0
+".\objects\startup_w7500x.o"
+".\objects\w7500x_crg.o"
+".\objects\w7500x_dma.o"
+".\objects\w7500x_gpio.o"
+".\objects\w7500x_uart.o"
+".\objects\w7500x_wztoe.o"
+".\objects\system_w7500x.o"
+".\objects\main.o"
+".\objects\w7500x_it.o"
+".\objects\retarget.o"
+".\objects\socket.o"
+".\objects\wizchip_conf.o"
+".\objects\w7500x_miim.o"
+".\objects\loopback.o"
+--strict --scatter ".\Objects\uart_to_udp.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\uart_to_udp.map" -o .\Objects\uart_to_udp.axf
