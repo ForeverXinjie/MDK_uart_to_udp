@@ -17,3 +17,4 @@
 .\objects\main.o: ..\ioLibrary\Ethernet\wizchip_conf.h
 .\objects\main.o: ..\ioLibrary\MDIO\W7500x_miim.h
 .\objects\main.o: D:\Keil9.55\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: ..\ioLibrary\Application\my_dac\my_dac.h

@@ -332,7 +332,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\MDK_uart_to_udp;..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM;..\Libraries\CMSIS\Device\WIZnet\W7500\Include;..\Libraries\W7500x_stdPeriph_Driver\inc;..\Libraries\CMSIS\Include;..\ioLibrary\Application\loopback;..\ioLibrary\Ethernet;..\ioLibrary\MDIO</IncludePath>
+              <IncludePath>..\..\MDK_uart_to_udp;..\Libraries\CMSIS\Device\WIZnet\W7500\Source\ARM;..\Libraries\CMSIS\Device\WIZnet\W7500\Include;..\Libraries\W7500x_stdPeriph_Driver\inc;..\Libraries\CMSIS\Include;..\ioLibrary\Application\loopback;..\ioLibrary\Ethernet;..\ioLibrary\MDIO;..\ioLibrary\Application\my_dac</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -469,6 +469,11 @@
               <FileName>loopback.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\ioLibrary\Application\loopback\loopback.c</FilePath>
+            </File>
+            <File>
+              <FileName>my_dac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\ioLibrary\Application\my_dac\my_dac.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -15,7 +15,7 @@
 #include <stdio.h>
 #include "W7500x_dma.h"
 
-#define HW32_REG(ADDRESS)  (*((volatile unsigned long  *)(ADDRESS)))
+
 dma_data_structure *dma_data;
 
 /* --------------------------------------------------------------- */
@@ -157,14 +157,13 @@ void dma_uart0(uint32_t src,uint32_t dest, unsigned int size, unsigned int num)
 									(4    << 14) |  /* R_power */
 									((num-1)<<4) |  /* n_minus_1 */
 									(0    <<  3) |  /* next_useburst */
-									(6    <<  0) ;  /* cycle_ctrl - auto */
+									(1    <<  0) ;  /* cycle_ctrl - auto */
 	
 	dma_data->Primary[chnl_num].SrcEndPointer  = (EXPECTED_BE) ? __REV(src_end_pointer) : (src_end_pointer);
 	dma_data->Primary[chnl_num].DestEndPointer = (EXPECTED_BE) ? __REV(dst_end_pointer) : (dst_end_pointer);
 	dma_data->Primary[chnl_num].Control        = (EXPECTED_BE) ? __REV(control        ) : (control        );
 	
 	DMA->CHNL_PRIORITY_SET = (1<<chnl_num); /*SET channel privorty high*/
-	
 	DMA->CHNL_ENABLE_SET = (1<<chnl_num); /* Enable channel */
 	DMA->CHNL_SW_REQUEST = (1<<chnl_num); /* request channel DMA */
 }

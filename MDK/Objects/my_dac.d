@@ -1,0 +1,10 @@
+.\objects\my_dac.o: ..\ioLibrary\Application\my_dac\my_dac.c
+.\objects\my_dac.o: ..\ioLibrary\Application\my_dac\my_dac.h
+.\objects\my_dac.o: ..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h
+.\objects\my_dac.o: ..\Libraries\CMSIS\Include\core_cm0.h
+.\objects\my_dac.o: D:\Keil9.55\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\my_dac.o: ..\Libraries\CMSIS\Include\core_cmInstr.h
+.\objects\my_dac.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
+.\objects\my_dac.o: ..\Libraries\CMSIS\Device\WIZnet\W7500\Include\system_W7500x.h
+.\objects\my_dac.o: ..\Libraries\CMSIS\Device\WIZnet\W7500\Include\W7500x.h
+.\objects\my_dac.o: ..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_dma.h

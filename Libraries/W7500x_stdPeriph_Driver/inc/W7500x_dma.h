@@ -49,6 +49,8 @@ typedef struct
 
 } DMA_TypeDef;
 
+#define HW32_REG(ADDRESS)  (*((volatile unsigned long  *)(ADDRESS)))
+
 #define DMA_CHNL_BITS 0
 
 #define DMA_STATUS_MSTREN_Pos          0                                              /*!<  DMA STATUS: MSTREN Position */

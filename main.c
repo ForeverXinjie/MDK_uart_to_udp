@@ -8,6 +8,7 @@
 #include "loopback.h"
 #include "W7500x_miim.h"
 #include "string.h"
+#include "my_dac.h"
 /* Private typedef -----------------------------------------------------------*/
 #define INPUT_x			GPIOC
 #define INPUT_pad		PAD_PC
@@ -18,7 +19,7 @@
 #define input2	GPIO_ReadInputDataBit(INPUT_x,INPUT2_pin)
 
 UART_InitTypeDef UART_InitStructure;
-
+My_DMA_InitTypeDef my_dma_InitStructure;
 
 
 /* Private function prototypes -----------------------------------------------*/
@@ -49,8 +50,9 @@ int main()
 	System_Initialization(); 
 	Input_init();	
 	Network_Properties();
-	dma_data_struct_init();
-    dma_init();
+//	dma_data_struct_init();
+//    dma_init();
+	
 	
 	//Detect_Gateway
 	if(Detect_Gateway()==1)
@@ -74,7 +76,10 @@ int main()
 		{
 			delay(100);
 			if(input1 == 0)
-				dma_uart0((uint32_t)uart_test,(uint32_t)&UART0->DR,0,12);
+			{
+				my_dma_config(2,&my_dma_InitStructure,(uint32_t)uart_test,(uint32_t)&UART0->DR,12);
+				dma_enable(2);
+			}
 				while(input1==0);
 		}
 		
