@@ -42,7 +42,7 @@ uint32_t uart0_rx_cnt=0;
 uint8_t  CAM_Snap[9] 		= {0x81,0x01,0x04,0x24,0x0A,0x00,0x00,0x01,0xFF};
 uint8_t  CAM_RecordStar[9] 	= {0x81,0x01,0x04,0x24,0x0A,0x00,0x00,0x02,0xFF};
 uint8_t  CAM_RecordStop[9] 	= {0x81,0x01,0x04,0x24,0x0A,0x00,0x00,0x03,0xFF};
-uint8_t  uart_test[12] = {"Hello World!"};
+uint8_t  uart_test[12] = {"Ni Hao!"};
 
 int main()
 {
@@ -50,8 +50,8 @@ int main()
 	System_Initialization(); 
 	Input_init();	
 	Network_Properties();
-//	dma_data_struct_init();
-//    dma_init();
+	dma_data_struct_init();
+    dma_init();
 	
 	
 	//Detect_Gateway
@@ -77,8 +77,9 @@ int main()
 			delay(100);
 			if(input1 == 0)
 			{
-				my_dma_config(2,&my_dma_InitStructure,(uint32_t)uart_test,(uint32_t)&UART0->DR,12);
-				dma_enable(2);
+//				my_dma_config(2,&my_dma_InitStructure,(uint32_t)uart_test,(uint32_t)&UART0->DR,12);
+//				dma_enable(2);
+				dma_uart0((uint32_t)uart_test,(uint32_t)&UART0->DR,0,12);
 			}
 				while(input1==0);
 		}

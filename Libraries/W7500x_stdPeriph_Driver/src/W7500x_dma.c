@@ -154,10 +154,10 @@ void dma_uart0(uint32_t src,uint32_t dest, unsigned int size, unsigned int num)
 									(size << 24) |  /* src_size */
 									(0    << 21) |  /* dst_prot_ctrl - HPROT[3:1] */
 									(0    << 18) |  /* src_prot_ctrl - HPROT[3:1] */
-									(4    << 14) |  /* R_power */
+									(0    << 14) |  /* R_power */
 									((num-1)<<4) |  /* n_minus_1 */
 									(0    <<  3) |  /* next_useburst */
-									(1    <<  0) ;  /* cycle_ctrl - auto */
+									(2    <<  0) ;  /* cycle_ctrl - auto */
 	
 	dma_data->Primary[chnl_num].SrcEndPointer  = (EXPECTED_BE) ? __REV(src_end_pointer) : (src_end_pointer);
 	dma_data->Primary[chnl_num].DestEndPointer = (EXPECTED_BE) ? __REV(dst_end_pointer) : (dst_end_pointer);

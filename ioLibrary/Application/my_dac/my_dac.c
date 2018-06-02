@@ -47,8 +47,7 @@ void my_dma_config(uint32_t chnl_num,My_DMA_InitTypeDef* my_dma_initstruct,uint3
 				my_dma_initstruct->src_inc  	| my_dma_initstruct->dst_inc  		|
 				my_dma_initstruct->src_port_ctrl| my_dma_initstruct->dst_port_ctrl	|
 				my_dma_initstruct->r_power		| my_dma_initstruct->next_useburst	| my_dma_initstruct->cycle_ctrl|
-				my_dma_initstruct->n_minus_l
-	;
+				my_dma_initstruct->n_minus_l	 ;
 	
 	dma_data->Primary[chnl_num].SrcEndPointer  = src_end_pointer;
 	dma_data->Primary[chnl_num].DestEndPointer = dst_end_pointer;
