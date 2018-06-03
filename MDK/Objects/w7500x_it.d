@@ -13,3 +13,4 @@
 .\objects\w7500x_it.o: ..\ioLibrary\Ethernet\wizchip_conf.h
 .\objects\w7500x_it.o: ..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_wztoe.h
 .\objects\w7500x_it.o: D:\Keil9.55\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\w7500x_it.o: ..\Libraries\W7500x_stdPeriph_Driver\inc\W7500x_dma.h

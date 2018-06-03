@@ -108,49 +108,63 @@ void SSP1_Handler(void)
 #include "W7500x_uart.h"	
 #include "string.h"	
 #include "loopback.h"
-#define USART_REC_LEN	2048					//定义最大接收字节数 2048	  	
+#include "W7500x_dma.h"	
+	
+#define USART_REC_LEN	1024					//定义最大接收字节数 2048	  	
 extern uint8_t  USART_RX_BUF[USART_REC_LEN]; 	//接收缓冲,最大USART_REC_LEN个字节.末字节为换行符 
 extern uint32_t uart0_rx_cnt;
+extern uint8_t  uart_test[12];
+uint8_t		test[1]={0};
 	
 void UART0_Handler(void)
 {
-//	static uint8_t  Sn_DIP[4]={192,168,1,189};
+	static uint8_t  Sn_DIP[4]={192,168,1,189};
 	uint8_t rec;
 	if(UART_GetRecvStatus(UART0,UART_RECV_STATUS_OE))
 	{
-		UART_ReceiveData(UART0);
+		rec = UartGetc(UART0);
+		dma_uart0((uint32_t)&rec,(uint32_t)&UART0->DR,0,1);
 		UART_ClearRecvStatus(UART0,UART_RECV_STATUS_OE);
 	}
 	if(UART_GetRecvStatus(UART0,UART_RECV_STATUS_BE))
 	{
-		UART_ReceiveData(UART0);
+		rec = UartGetc(UART0);
+		dma_uart0((uint32_t)&rec,(uint32_t)&UART0->DR,0,1);
 		UART_ClearRecvStatus(UART0,UART_RECV_STATUS_BE);
 	}
 	if(UART_GetRecvStatus(UART0,UART_RECV_STATUS_PE))
 	{
-		UART_ReceiveData(UART0);
+		rec = UartGetc(UART0);
+		dma_uart0((uint32_t)&rec,(uint32_t)&UART0->DR,0,1);
 		UART_ClearRecvStatus(UART0,UART_RECV_STATUS_PE);
 	}
 	if(UART_GetRecvStatus(UART0,UART_RECV_STATUS_FE))
 	{
-		UART_ReceiveData(UART0);
+		rec = UartGetc(UART0);
+		dma_uart0((uint32_t)&rec,(uint32_t)&UART0->DR,0,1);
 		UART_ClearRecvStatus(UART0,UART_RECV_STATUS_FE);
 	}
     if(UART_GetITStatus(UART0,UART_IT_FLAG_RXI) != RESET)
     {
 		rec = UartGetc(UART0);
+//		test[0] = rec;
         UART_ClearITPendingBit(UART0,UART_IT_FLAG_RXI);
-		USART_RX_BUF[uart0_rx_cnt] = rec;
-		uart0_rx_cnt++;
-		if(uart0_rx_cnt>2048)
-		{
-//			UartPuts(UART0,USART_RX_BUF);
-			uart0_rx_cnt = 0;
-//			send_udp(0, USART_RX_BUF,len, Sn_DIP, 59979);
+//		USART_RX_BUF[uart0_rx_cnt] = rec;
+//		uart0_rx_cnt++;
+		dma_uart0((uint32_t)&rec,(uint32_t)&UART0->DR,0,1);
+		rec = 0;
+//		send_udp(0, test,1, Sn_DIP, 59979);
+//		if(uart0_rx_cnt==1024)
+//		{
+//			send_udp(0, USART_RX_BUF,1024, Sn_DIP, 59979);
 //			uart0_rx_cnt = 0;
-//			uart0_rx_cnt = 0;
-//			memset(USART_RX_BUF,0,2048);
-		}
+//			memset(USART_RX_BUF,0,1024);
+//		}
+//	if(UART_GetFlagStatus(UART0,UART_FLAG_BUSY) == RESET)
+//	{
+//		send_udp(0, USART_RX_BUF,uart0_rx_cnt, Sn_DIP, 59979);
+//		uart0_rx_cnt = 0;
+//	}		
     }
 }
 

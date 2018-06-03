@@ -64,13 +64,13 @@ int main()
 	{  
 		loopback_udps(0, test_buf, 5000);        // Socket 0 is set to the UDP mode, set the port to 5000
 		
-		if(USART_RX_BUF[0]!=0)
-		{
-			UartPuts(UART0,USART_RX_BUF);
-			send_udp(0, USART_RX_BUF, uart0_rx_cnt, Sn_DIP, 59979);
-			uart0_rx_cnt = 0;
-			memset(USART_RX_BUF,0,2048);
-		}
+//		if(USART_RX_BUF[0]!=0)
+//		{
+//			UartPuts(UART0,USART_RX_BUF);
+//			send_udp(0, USART_RX_BUF, uart0_rx_cnt, Sn_DIP, 59979);
+//			uart0_rx_cnt = 0;
+//			memset(USART_RX_BUF,0,2048);
+//		}
 		
 		if((input1==0))
 		{
